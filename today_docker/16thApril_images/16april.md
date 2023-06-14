@@ -27,7 +27,7 @@
     
          ` git clone https://github.com/spring-projects/spring-petclinic.git `
          ` cd spring-petclinic `
-        mvn package
+        mvn package ----once you dothis creating jar file...
         # a file gets created in target/spring-petclinic-*.jar
 
 
@@ -36,4 +36,37 @@
         https://github.com/asquarezone/DockerZone/commit/968357bc0da234840996e75b3394811715bc35a9
               for the changes done to create spring petclinic as multistage build.
 
-        
+          Dockerfile....
+
+         ### 
+             FROM ubuntu AS generator
+             RUN mkdir /test && touch test/{1..10}.text
+
+             FROM alpine
+             COPY --from=generator /test /test
+             CMD ["sleep","1d"] 
+         ###
+
+        ` docker image build -t exp .  `
+![privew](14.png)
+         
+
+         ` docker container run -it ubuntu:20.04 /bin/bash `
+![privew](15.png) 
+
+         ` apt update `
+         ` apt install unzip `
+         ` apt install wget `
+         ` wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.60.3/nopCommerce_4.60.3_NoSource_linux_x64.zip
+
+         ` apt install wget `
+
+         ` ls `
+         ` unzip nopCommerce_4.60.3_NoSource_linux_x64.zip `
+![preview](16.png)
+![preview](17.png)
+
+
+
+
+
