@@ -211,8 +211,40 @@
 ![preview](27.png)
 
 
-hi raju what is today task...
+      ### Private Registries
+
+         * There are many applciations for hosting private registries
+           * AWS: ECR (Elastic container registry)
+           * Azure: ACR (Azure Container Registry)
+           * Jfrog
         
+      ###AWS ECR
+           
+           * Create an ECR Repository
+![preview](32.png)
+![preview](33.png)
+![preview](34.png)
+           * view push commands...
+![preview](35.png)
+           * push commands....
+![preview](36.png)
+
+          
+           * install and configure aws cli link here..https://sst.dev/chapters/create-an-iam-user.html
+
+
+
+
+           *** Azure ACR
+
+           * Refer Here for detailed information...
+             https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr
+
+
+             
+        
+
+
 
 
 
