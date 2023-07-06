@@ -1,0 +1,13 @@
+---
+apiversion: v1
+kind: pod
+metadata:
+  name: restartalways
+spec: 
+  restartpolicy: always
+  containers:
+    - name: alpine
+      image: alpine
+      args:
+        - sleep
+        - 3s
