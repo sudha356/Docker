@@ -1,10 +1,10 @@
 ---
-apiversion: v1
-kind: pod
+apiVersion: v1
+kind: Pod
 metadata:
   name: restartnever
-spec: 
-  restartpolicy: Always
+spec:
+  restartPolicy: Always
   containers:
     - name: alpine
       image: alpine
