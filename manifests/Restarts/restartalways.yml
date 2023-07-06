@@ -2,9 +2,9 @@
 apiversion: v1
 kind: pod
 metadata:
-  name: restartalways
+  name: restartnever
 spec: 
-  restartpolicy: always
+  restartpolicy: Always
   containers:
     - name: alpine
       image: alpine
