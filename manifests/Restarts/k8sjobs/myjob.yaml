@@ -1,0 +1,16 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata: 
+  name: myjob
+spec: 
+  template:
+    metadata:
+      name: myjobpod
+  spec:
+    containers:
+      - image: alpine
+        command:
+          - sllep
+          - 10s
+
