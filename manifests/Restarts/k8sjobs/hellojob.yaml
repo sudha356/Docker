@@ -2,11 +2,11 @@
 apiVersion: batch
 kind: Job
 metadata: 
-  name: myjob
+  name: hellojob
 spec: 
   template:
     metadata:
-      name: myjobpod
+      name: jobpod
   spec:
     containers:
       - image: alpine
