@@ -11,7 +11,7 @@ spec:
     spec:
       template:
         metadata:
-          name: nowdata
+          name: livedata
         spec:
           containers:
             - name: alpine
