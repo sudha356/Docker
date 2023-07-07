@@ -9,10 +9,12 @@ spec:
     metadata:
       name: nowdata
     spec:
+      backoffLimit: 2
       template:
         metadata:
           name: livedata
         spec:
+          restartPolicy: OnFailure
           containers:
             - name: alpine
               image: alpine
