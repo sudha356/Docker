@@ -7,11 +7,11 @@ spec:
   schedule: '* * * * *' 
   jobTemplate: 
     metadata:
-      name: nowdata
+      name: getlivedata
     spec:
       template:
         metadata:
-          name: livedata
+          name: livedatapod
         spec:
           containers:
             - name: alpine
