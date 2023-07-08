@@ -10,7 +10,7 @@ spec:
     spec:
       template:
         metadata:
-          name: livepod
+          name: livepod1
         spec:
           containers:
             - name: alpine
