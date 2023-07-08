@@ -8,12 +8,12 @@ spec:
   template:
     metadata:
       name: jobpod
-  spec:
-    restartPolicy: OnFailure
-    containers:
-      - name: alpine
-      - image: alpine
-        command:
-          - sllep
-          - 10s
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: alpine
+        - image: alpine
+          command:
+            - sllep
+            - 10s
 
