@@ -10,7 +10,7 @@ spec:
     spec:
       template:
         metadata:
-          name: livepod1
+          name: livedata
         spec:
           restartPolicy: Always
           containers:
