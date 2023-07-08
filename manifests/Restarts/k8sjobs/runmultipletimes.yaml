@@ -11,14 +11,14 @@ spec:
     spec:
       template:
         metadata:
-          name: livedatapod
+          name: livedata
         spec:
+          restartPolicy: Never
           containers:
-            - name: alpine
+            - name: alpine1
               image: alpine
               command:
                 - sleep
-                - 2s
-
+                - 3s
       
     
