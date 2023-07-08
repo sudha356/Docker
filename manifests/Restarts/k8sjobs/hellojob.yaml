@@ -12,7 +12,7 @@ spec:
       restartPolicy: OnFailure
       containers:
         - name: alpine
-        - image: alpine
+          image: alpine
           command:
             - sllep
             - 10s
