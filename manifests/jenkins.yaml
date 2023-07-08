@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rjenkins
+spec:
+  containers:
+    - name: rjenkins
+      image: jenkins/jenkins
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+
+         
