@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: CronJob
+metadata:
+  name: livedata
+spec: 
+  schedule: '* * * * *'
+  jobTemplate: 
+    metadata: 
+      name: livedata
+    spec:
+      template:
+        metadata:
+          name: livepod
+        spec:
+          containers:
+            - name: alpine
+              image: alpine
+              command:
+                - sleep
+                - 3s
