@@ -12,7 +12,7 @@ spec:
         metadata:
           name: livepod1
         spec:
-          restartPolicy: never
+          restartPolicy: Always
           containers:
             - name: alpine1
               image: alpine
