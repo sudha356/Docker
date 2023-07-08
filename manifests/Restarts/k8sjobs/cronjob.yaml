@@ -13,8 +13,8 @@ spec:
           name: livepod1
       spec:
         containers:
-          - name: alpine
+          - name: alpine1
             image: alpine
-              command:
-                - sleep
-                - 3s
+            command:
+              - sleep
+              - 3s
