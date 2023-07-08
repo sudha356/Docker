@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: raju
+spec:
+  minReadySeconds: 1
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: nginx
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template: 
+    metadata: 
+      name: raju
+      labels: 
+        app: nginx
+    spec:
+      containers:
+        - name: nginxcontainer
+          image: nginx
+          ports:
+            - containerPort: 80
+              protocol: TCP
