@@ -12,7 +12,7 @@ spec:
         metadata:
           name: livedata
         spec:
-          restartPolicy: Never
+          restartPolicy: Always
           containers:
             - name: alpine1
               image: alpine
