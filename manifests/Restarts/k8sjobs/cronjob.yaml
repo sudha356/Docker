@@ -7,14 +7,14 @@ spec:
   jobTemplate: 
     metadata: 
       name: livedata
-  spec:
-    template:
-      metadata:
-        name: livepod1
-      spec:
-        containers:
-          - name: alpine1
-            image: alpine
-            command:
-              - sleep
-              - 3s
+    spec:
+      template:
+        metadata:
+          name: livepod1
+        spec:
+          containers:
+            - name: alpine1
+              image: alpine
+              command:
+                - sleep
+                - 3s
