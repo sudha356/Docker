@@ -7,7 +7,7 @@ spec:
   replicas: 5
   selector: 
     matchLabels:
-      apps: jenkins-pod
+      apps: jenkins
   template: 
     metadata:
       name: jenkins
