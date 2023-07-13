@@ -8,17 +8,17 @@ metadata:
     selector: 
       matchLabels:
         apps: jenkins
-    template: 
-      metadata:
-        name: jenkins
-        labels: 
-          apps: jenkins
+      template: 
+        metadata:
+          name: jenkins
+          labels: 
+            apps: jenkins
         spec:
           containers:
             - name: jenkins
               image: jenkins/jenkins:lts-jdk11
               ports:
-                - containerPort: 8080
+                 - containerPort: 8080
             - name: alpine
               image: alpine:3
               args:
